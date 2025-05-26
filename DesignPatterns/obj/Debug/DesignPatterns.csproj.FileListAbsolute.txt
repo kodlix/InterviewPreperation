@@ -1,0 +1,6 @@
+/Users/johnsoniyida/Dev/InterviewPreperation/DesignPatterns/bin/Debug/DesignPatterns.dll
+/Users/johnsoniyida/Dev/InterviewPreperation/DesignPatterns/bin/Debug/DesignPatterns.pdb
+/Users/johnsoniyida/Dev/InterviewPreperation/DesignPatterns/obj/Debug/DesignPatterns.csproj.AssemblyReference.cache
+/Users/johnsoniyida/Dev/InterviewPreperation/DesignPatterns/obj/Debug/DesignPatterns.csproj.CoreCompileInputs.cache
+/Users/johnsoniyida/Dev/InterviewPreperation/DesignPatterns/obj/Debug/DesignPatterns.dll
+/Users/johnsoniyida/Dev/InterviewPreperation/DesignPatterns/obj/Debug/DesignPatterns.pdb

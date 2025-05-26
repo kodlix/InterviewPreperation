@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{3CB02157-1E24-44A0-8E93-255FEB2339EE}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>DesignPatterns</RootNamespace>
+        <AssemblyName>DesignPatterns</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+      <Compile Include="BehaviouralPatterns\Command\DimCommand.cs" />
+      <Compile Include="BehaviouralPatterns\Command\ICommand.cs" />
+      <Compile Include="BehaviouralPatterns\Command\Light.cs" />
+      <Compile Include="BehaviouralPatterns\Command\RemoteControl.cs" />
+      <Compile Include="BehaviouralPatterns\Command\TurnOffCommand.cs" />
+      <Compile Include="BehaviouralPatterns\Command\TurnOnCommand.cs" />
+      <Compile Include="BehaviouralPatterns\Command\UndoableCommand\History.cs" />
+      <Compile Include="BehaviouralPatterns\Command\UndoableCommand\HtmlDocument.cs" />
+      <Compile Include="BehaviouralPatterns\Command\UndoableCommand\ICommand.cs" />
+      <Compile Include="BehaviouralPatterns\Command\UndoableCommand\ItalicCommand.cs" />
+      <Compile Include="BehaviouralPatterns\Command\UndoableCommand\IUndoableCommand.cs" />
+      <Compile Include="BehaviouralPatterns\Command\UndoableCommand\UndoCommand.cs" />
+      <Compile Include="BehaviouralPatterns\Iterator\IIterator.cs" />
+      <Compile Include="BehaviouralPatterns\Iterator\ShoppingList.cs" />
+      <Compile Include="BehaviouralPatterns\Momento\Editor.cs" />
+      <Compile Include="BehaviouralPatterns\Momento\EditorState.cs" />
+      <Compile Include="BehaviouralPatterns\Momento\History.cs" />
+      <Compile Include="BehaviouralPatterns\State\Document.cs" />
+      <Compile Include="BehaviouralPatterns\State\DocumentState.cs" />
+      <Compile Include="BehaviouralPatterns\State\DraftState.cs" />
+      <Compile Include="BehaviouralPatterns\State\ModerationState.cs" />
+      <Compile Include="BehaviouralPatterns\State\PublishedState.cs" />
+      <Compile Include="BehaviouralPatterns\State\State.cs" />
+      <Compile Include="BehaviouralPatterns\State\UserRoles.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\CompressMOV.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\CompressMP4.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\Compressors.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\CompressWebM.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\ICompressor.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\IOverlay.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\OverLayBlackAndWhite.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\OverLayBlur.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\OverLayNone.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\Overlays.cs" />
+      <Compile Include="BehaviouralPatterns\Strategy\VideoStorage.cs" />
+      <Compile Include="BehaviouralPatterns\Template\Strategy\BeverageMaker.cs" />
+      <Compile Include="BehaviouralPatterns\Template\Strategy\Camomile.cs" />
+      <Compile Include="BehaviouralPatterns\Template\Strategy\Coffee.cs" />
+      <Compile Include="BehaviouralPatterns\Template\Strategy\IBeverage.cs" />
+      <Compile Include="BehaviouralPatterns\Template\Strategy\Tea.cs" />
+      <Compile Include="BehaviouralPatterns\Template\TemplateMethod\Beverage.cs" />
+      <Compile Include="BehaviouralPatterns\Template\TemplateMethod\Camomile.cs" />
+      <Compile Include="BehaviouralPatterns\Template\TemplateMethod\Tea.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+</Project>

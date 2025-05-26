@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewPreparation", "InterviewPreparation\InterviewPreparation.csproj", "{BAC9D4ED-8FFD-4022-A800-D92DC6378C30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{3CB02157-1E24-44A0-8E93-255FEB2339EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAC9D4ED-8FFD-4022-A800-D92DC6378C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC9D4ED-8FFD-4022-A800-D92DC6378C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC9D4ED-8FFD-4022-A800-D92DC6378C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC9D4ED-8FFD-4022-A800-D92DC6378C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CB02157-1E24-44A0-8E93-255FEB2339EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CB02157-1E24-44A0-8E93-255FEB2339EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CB02157-1E24-44A0-8E93-255FEB2339EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CB02157-1E24-44A0-8E93-255FEB2339EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

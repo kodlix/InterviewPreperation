@@ -1,0 +1,9 @@
+/Users/johnsoniyida/Dev/InterviewPreperation/InterviewPreparation/bin/Debug/InterviewPreparation.exe
+/Users/johnsoniyida/Dev/InterviewPreperation/InterviewPreparation/bin/Debug/InterviewPreparation.pdb
+/Users/johnsoniyida/Dev/InterviewPreperation/InterviewPreparation/bin/Debug/DesignPatterns.dll
+/Users/johnsoniyida/Dev/InterviewPreperation/InterviewPreparation/bin/Debug/DesignPatterns.pdb
+/Users/johnsoniyida/Dev/InterviewPreperation/InterviewPreparation/obj/Debug/InterviewPreparation.csproj.AssemblyReference.cache
+/Users/johnsoniyida/Dev/InterviewPreperation/InterviewPreparation/obj/Debug/InterviewPreparation.csproj.CoreCompileInputs.cache
+/Users/johnsoniyida/Dev/InterviewPreperation/InterviewPreparation/obj/Debug/InterviewPreparation.csproj.CopyComplete
+/Users/johnsoniyida/Dev/InterviewPreperation/InterviewPreparation/obj/Debug/InterviewPreparation.exe
+/Users/johnsoniyida/Dev/InterviewPreperation/InterviewPreparation/obj/Debug/InterviewPreparation.pdb

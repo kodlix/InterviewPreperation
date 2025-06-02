@@ -33,6 +33,12 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+      <Compile Include="BehaviouralPatterns\ChainOfResponsibility\Authenticator.cs" />
+      <Compile Include="BehaviouralPatterns\ChainOfResponsibility\Handler.cs" />
+      <Compile Include="BehaviouralPatterns\ChainOfResponsibility\HttpRequest.cs" />
+      <Compile Include="BehaviouralPatterns\ChainOfResponsibility\Logger.cs" />
+      <Compile Include="BehaviouralPatterns\ChainOfResponsibility\Validator.cs" />
+      <Compile Include="BehaviouralPatterns\ChainOfResponsibility\WebServer.cs" />
       <Compile Include="BehaviouralPatterns\Command\DimCommand.cs" />
       <Compile Include="BehaviouralPatterns\Command\ICommand.cs" />
       <Compile Include="BehaviouralPatterns\Command\Light.cs" />

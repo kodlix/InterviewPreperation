@@ -98,6 +98,13 @@
       <Compile Include="BehaviouralPatterns\Template\TemplateMethod\Beverage.cs" />
       <Compile Include="BehaviouralPatterns\Template\TemplateMethod\Camomile.cs" />
       <Compile Include="BehaviouralPatterns\Template\TemplateMethod\Tea.cs" />
+      <Compile Include="BehaviouralPatterns\Visitor\Client.cs" />
+      <Compile Include="BehaviouralPatterns\Visitor\EmailVisitor.cs" />
+      <Compile Include="BehaviouralPatterns\Visitor\IVisitor.cs" />
+      <Compile Include="BehaviouralPatterns\Visitor\LawClient.cs" />
+      <Compile Include="BehaviouralPatterns\Visitor\PdfExportVisitor.cs" />
+      <Compile Include="BehaviouralPatterns\Visitor\RestaurantClient.cs" />
+      <Compile Include="BehaviouralPatterns\Visitor\RetailClient.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

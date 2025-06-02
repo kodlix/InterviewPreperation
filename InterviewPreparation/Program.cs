@@ -11,6 +11,8 @@ using DesignPatterns.BehaviouralPatterns.Observer;
 using DesignPatterns.BehaviouralPatterns.State;
 using DesignPatterns.BehaviouralPatterns.Strategy;
 using DesignPatterns.BehaviouralPatterns.Template.Strategy;
+using DesignPatterns.BehaviouralPatterns.Visitor;
+using Microsoft.Win32;
 using Camomile = DesignPatterns.BehaviouralPatterns.Template.TemplateMethod.Camomile;
 using History = DesignPatterns.BehaviouralPatterns.Momento.History;
 using Tea = DesignPatterns.BehaviouralPatterns.Template.TemplateMethod.Tea;
@@ -160,7 +162,7 @@ namespace InterviewPreparation
             
             #region Chain of Responsibility => Behavioural
 
-            var validator = new Validator();
+            /*var validator = new Validator();
             var authenticator = new Authenticator();
             var logger = new Logger();
 
@@ -168,7 +170,24 @@ namespace InterviewPreparation
             var webServer = new WebServer(validator);
 
             var req = new HttpRequest("johny", "1234");
-            webServer.Handler(req);
+            webServer.Handler(req);*/
+
+            #endregion
+            
+            #region  => Behavioural
+
+            var clients = new List<Client>()
+            {
+                new RetailClient("Donal Duke", "don@yopmail.com"),
+                new LawClient("Prof Saige", "saige@yopmail.com"),
+                new RestaurantClient("Miami Foods", "miami@yopmail.com")
+            };
+
+            foreach (var client in clients)
+            {
+                //client.Accept(new EmailVisitor());
+                client.Accept(new PdfExportVisitor());
+            }
 
             #endregion
         }

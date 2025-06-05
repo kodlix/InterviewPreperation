@@ -1,10 +1,10 @@
 namespace DesignPatterns.BehaviouralPatterns.Command
 {
-    public class RemoteControl
+    public class RemoteController
     {
         private ICommand _command;
 
-        public RemoteControl(ICommand command)
+        public RemoteController(ICommand command)
         {
             _command = command;
         }

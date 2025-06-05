@@ -12,6 +12,9 @@ using DesignPatterns.BehaviouralPatterns.State;
 using DesignPatterns.BehaviouralPatterns.Strategy;
 using DesignPatterns.BehaviouralPatterns.Template.Strategy;
 using DesignPatterns.BehaviouralPatterns.Visitor;
+using DesignPatterns.StructuralPatterns.Adapter;
+using DesignPatterns.StructuralPatterns.Adapter.Package;
+using DesignPatterns.StructuralPatterns.Bridge;
 using DesignPatterns.StructuralPatterns.Composite;
 using Microsoft.Win32;
 using Camomile = DesignPatterns.BehaviouralPatterns.Template.TemplateMethod.Camomile;
@@ -194,7 +197,7 @@ namespace InterviewPreparation
             
             #region  Composite => Structural
 
-            var package = new Box();
+            /*var package = new Box();
 
             var box1 = new Box();
             box1.Add(new MicroPhone());
@@ -213,7 +216,29 @@ namespace InterviewPreparation
             package.Add(box1);
             package.Add(box2);
             
-            Console.Write("The total price of package is " + package.GetPrice());
+            Console.Write("The total price of package is " + package.GetPrice());*/
+
+            #endregion
+            
+            #region  Adapter => Structural
+
+            //var videoEditor = new VideoEditor(new Video());
+            //videoEditor.ApplyColor(new RainbowColor(new Rainbow()));
+
+            #endregion
+            
+            #region  Bridge => Structural
+
+            var lgRemoteControl = new RemoteControl(new LgRadio());
+            lgRemoteControl.TurnOn();
+            lgRemoteControl.TurnOff();
+            
+            var advancedRemoteControl = new AdvanceRemoteControl(new SonyRadio());
+            advancedRemoteControl.TurnOn();
+            advancedRemoteControl.TurnOff();
+            advancedRemoteControl.SetChannel(55);
+            
+            
 
             #endregion
         }

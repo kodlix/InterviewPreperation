@@ -16,6 +16,8 @@ using DesignPatterns.StructuralPatterns.Adapter;
 using DesignPatterns.StructuralPatterns.Adapter.Package;
 using DesignPatterns.StructuralPatterns.Bridge;
 using DesignPatterns.StructuralPatterns.Composite;
+using DesignPatterns.StructuralPatterns.Proxy;
+using DesignPatterns.StructuralPatterns.Proxy.Package;
 using Microsoft.Win32;
 using Camomile = DesignPatterns.BehaviouralPatterns.Template.TemplateMethod.Camomile;
 using History = DesignPatterns.BehaviouralPatterns.Momento.History;
@@ -222,23 +224,38 @@ namespace InterviewPreparation
             
             #region  Adapter => Structural
 
-            //var videoEditor = new VideoEditor(new Video());
+            //var videoEditor = new VideoEditor(new IVideo());
             //videoEditor.ApplyColor(new RainbowColor(new Rainbow()));
 
             #endregion
             
             #region  Bridge => Structural
 
-            var lgRemoteControl = new RemoteControl(new LgRadio());
+            /*var lgRemoteControl = new RemoteControl(new LgRadio());
             lgRemoteControl.TurnOn();
             lgRemoteControl.TurnOff();
             
             var advancedRemoteControl = new AdvanceRemoteControl(new SonyRadio());
             advancedRemoteControl.TurnOn();
             advancedRemoteControl.TurnOff();
-            advancedRemoteControl.SetChannel(55);
+            advancedRemoteControl.SetChannel(55);*/
             
+            #endregion
             
+            #region  Proxy => Structural
+
+            var videoList = new VideoList();
+            string[] vidoeIds = { "abcd", "1234", "7890"};
+
+            foreach (var videoId in vidoeIds)
+            {
+                videoList.Add(new YoutubeVideoProxy(videoId));
+            }
+            
+            //watch video
+            videoList.Watch("abcd");
+
+
 
             #endregion
         }

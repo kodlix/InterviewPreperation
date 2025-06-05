@@ -122,6 +122,10 @@
       <Compile Include="StructuralPatterns\Composite\KeyBoard.cs" />
       <Compile Include="StructuralPatterns\Composite\MicroPhone.cs" />
       <Compile Include="StructuralPatterns\Composite\Mouse.cs" />
+      <Compile Include="StructuralPatterns\Proxy\Package\IVideo.cs" />
+      <Compile Include="StructuralPatterns\Proxy\Package\YoutubeVideo.cs" />
+      <Compile Include="StructuralPatterns\Proxy\VideoList.cs" />
+      <Compile Include="StructuralPatterns\Proxy\YoutubeVideoProxy.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

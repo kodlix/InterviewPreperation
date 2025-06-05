@@ -105,6 +105,11 @@
       <Compile Include="BehaviouralPatterns\Visitor\PdfExportVisitor.cs" />
       <Compile Include="BehaviouralPatterns\Visitor\RestaurantClient.cs" />
       <Compile Include="BehaviouralPatterns\Visitor\RetailClient.cs" />
+      <Compile Include="StructuralPatterns\Composite\Box.cs" />
+      <Compile Include="StructuralPatterns\Composite\IItem.cs" />
+      <Compile Include="StructuralPatterns\Composite\KeyBoard.cs" />
+      <Compile Include="StructuralPatterns\Composite\MicroPhone.cs" />
+      <Compile Include="StructuralPatterns\Composite\Mouse.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

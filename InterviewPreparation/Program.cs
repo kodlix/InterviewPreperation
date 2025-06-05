@@ -12,6 +12,7 @@ using DesignPatterns.BehaviouralPatterns.State;
 using DesignPatterns.BehaviouralPatterns.Strategy;
 using DesignPatterns.BehaviouralPatterns.Template.Strategy;
 using DesignPatterns.BehaviouralPatterns.Visitor;
+using DesignPatterns.StructuralPatterns.Composite;
 using Microsoft.Win32;
 using Camomile = DesignPatterns.BehaviouralPatterns.Template.TemplateMethod.Camomile;
 using History = DesignPatterns.BehaviouralPatterns.Momento.History;
@@ -174,9 +175,9 @@ namespace InterviewPreparation
 
             #endregion
             
-            #region  => Behavioural
+            #region  Visitor => Behavioural
 
-            var clients = new List<Client>()
+            /*var clients = new List<Client>()
             {
                 new RetailClient("Donal Duke", "don@yopmail.com"),
                 new LawClient("Prof Saige", "saige@yopmail.com"),
@@ -187,7 +188,32 @@ namespace InterviewPreparation
             {
                 //client.Accept(new EmailVisitor());
                 client.Accept(new PdfExportVisitor());
-            }
+            }*/
+
+            #endregion
+            
+            #region  Composite => Structural
+
+            var package = new Box();
+
+            var box1 = new Box();
+            box1.Add(new MicroPhone());
+
+            var box2 = new Box();
+            
+            var box3 = new Box();
+            box1.Add(new Mouse());
+            
+            var box4 = new Box();
+            box1.Add(new KeyBoard());
+            
+            box2.Add(box3);
+            box2.Add(box4);
+            
+            package.Add(box1);
+            package.Add(box2);
+            
+            Console.Write("The total price of package is " + package.GetPrice());
 
             #endregion
         }

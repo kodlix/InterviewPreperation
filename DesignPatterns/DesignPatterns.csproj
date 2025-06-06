@@ -122,6 +122,12 @@
       <Compile Include="StructuralPatterns\Composite\KeyBoard.cs" />
       <Compile Include="StructuralPatterns\Composite\MicroPhone.cs" />
       <Compile Include="StructuralPatterns\Composite\Mouse.cs" />
+      <Compile Include="StructuralPatterns\Facade\Authenticate.cs" />
+      <Compile Include="StructuralPatterns\Facade\Inventory.cs" />
+      <Compile Include="StructuralPatterns\Facade\OrderFulfilment.cs" />
+      <Compile Include="StructuralPatterns\Facade\OrderRequest.cs" />
+      <Compile Include="StructuralPatterns\Facade\OrderService.cs" />
+      <Compile Include="StructuralPatterns\Facade\Payment.cs" />
       <Compile Include="StructuralPatterns\FlightWeight\Crop.cs" />
       <Compile Include="StructuralPatterns\FlightWeight\CropIcon.cs" />
       <Compile Include="StructuralPatterns\FlightWeight\CropIconFactory.cs" />

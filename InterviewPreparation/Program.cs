@@ -16,6 +16,7 @@ using DesignPatterns.StructuralPatterns.Adapter;
 using DesignPatterns.StructuralPatterns.Adapter.Package;
 using DesignPatterns.StructuralPatterns.Bridge;
 using DesignPatterns.StructuralPatterns.Composite;
+using DesignPatterns.StructuralPatterns.Decorator;
 using DesignPatterns.StructuralPatterns.Facade;
 using DesignPatterns.StructuralPatterns.FlightWeight;
 using DesignPatterns.StructuralPatterns.Proxy;
@@ -279,8 +280,25 @@ namespace InterviewPreparation
             
             #region  Decorator => Structural
 
-            var orderService = new OrderService();
-            orderService.Order(new OrderRequest());
+            bool encryptData = true, compressData = true, validate = true;
+            IData cloudData = new CloudData("https://google.com/ai/llm-models");
+            
+            if (validate)
+            {
+                cloudData = new ValidationDecorator(cloudData);
+            }
+
+            if (encryptData)
+            {
+                 cloudData = new EncryptionDecorator(cloudData);
+            }
+            
+            if (compressData)
+            {
+                cloudData = new CompressionDecorator(cloudData);
+            }
+            
+            cloudData.Save("uqwhqjkqkjsaasasjkaskjkadsjkaskjadjkajk");
 
             #endregion
         }

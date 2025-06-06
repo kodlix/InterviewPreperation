@@ -122,6 +122,12 @@
       <Compile Include="StructuralPatterns\Composite\KeyBoard.cs" />
       <Compile Include="StructuralPatterns\Composite\MicroPhone.cs" />
       <Compile Include="StructuralPatterns\Composite\Mouse.cs" />
+      <Compile Include="StructuralPatterns\Decorator\CloudData.cs" />
+      <Compile Include="StructuralPatterns\Decorator\CompressionDecorator.cs" />
+      <Compile Include="StructuralPatterns\Decorator\DataDecorator.cs" />
+      <Compile Include="StructuralPatterns\Decorator\EncryptionDecorator.cs" />
+      <Compile Include="StructuralPatterns\Decorator\IData.cs" />
+      <Compile Include="StructuralPatterns\Decorator\ValidationDecorator.cs" />
       <Compile Include="StructuralPatterns\Facade\Authenticate.cs" />
       <Compile Include="StructuralPatterns\Facade\Inventory.cs" />
       <Compile Include="StructuralPatterns\Facade\OrderFulfilment.cs" />

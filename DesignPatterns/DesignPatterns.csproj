@@ -122,6 +122,10 @@
       <Compile Include="StructuralPatterns\Composite\KeyBoard.cs" />
       <Compile Include="StructuralPatterns\Composite\MicroPhone.cs" />
       <Compile Include="StructuralPatterns\Composite\Mouse.cs" />
+      <Compile Include="StructuralPatterns\FlightWeight\Crop.cs" />
+      <Compile Include="StructuralPatterns\FlightWeight\CropIcon.cs" />
+      <Compile Include="StructuralPatterns\FlightWeight\CropService.cs" />
+      <Compile Include="StructuralPatterns\FlightWeight\CropType.cs" />
       <Compile Include="StructuralPatterns\Proxy\Package\IVideo.cs" />
       <Compile Include="StructuralPatterns\Proxy\Package\YoutubeVideo.cs" />
       <Compile Include="StructuralPatterns\Proxy\VideoList.cs" />

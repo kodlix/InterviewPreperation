@@ -124,6 +124,7 @@
       <Compile Include="StructuralPatterns\Composite\Mouse.cs" />
       <Compile Include="StructuralPatterns\FlightWeight\Crop.cs" />
       <Compile Include="StructuralPatterns\FlightWeight\CropIcon.cs" />
+      <Compile Include="StructuralPatterns\FlightWeight\CropIconFactory.cs" />
       <Compile Include="StructuralPatterns\FlightWeight\CropService.cs" />
       <Compile Include="StructuralPatterns\FlightWeight\CropType.cs" />
       <Compile Include="StructuralPatterns\Proxy\Package\IVideo.cs" />

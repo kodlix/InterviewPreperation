@@ -105,6 +105,10 @@
       <Compile Include="BehaviouralPatterns\Visitor\PdfExportVisitor.cs" />
       <Compile Include="BehaviouralPatterns\Visitor\RestaurantClient.cs" />
       <Compile Include="BehaviouralPatterns\Visitor\RetailClient.cs" />
+      <Compile Include="CreationalPatterns\PrototypePattern\Circle.cs" />
+      <Compile Include="CreationalPatterns\PrototypePattern\IShape.cs" />
+      <Compile Include="CreationalPatterns\PrototypePattern\Rectangle.cs" />
+      <Compile Include="CreationalPatterns\PrototypePattern\ShapeAction.cs" />
       <Compile Include="StructuralPatterns\Adapter\BlackAndWhiteColor.cs" />
       <Compile Include="StructuralPatterns\Adapter\IColor.cs" />
       <Compile Include="StructuralPatterns\Adapter\Package\Rainbow.cs" />

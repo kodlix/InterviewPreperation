@@ -12,6 +12,7 @@ using DesignPatterns.BehaviouralPatterns.State;
 using DesignPatterns.BehaviouralPatterns.Strategy;
 using DesignPatterns.BehaviouralPatterns.Template.Strategy;
 using DesignPatterns.BehaviouralPatterns.Visitor;
+using DesignPatterns.CreationalPatterns.PrototypePattern;
 using DesignPatterns.StructuralPatterns.Adapter;
 using DesignPatterns.StructuralPatterns.Adapter.Package;
 using DesignPatterns.StructuralPatterns.Bridge;
@@ -280,7 +281,7 @@ namespace InterviewPreparation
             
             #region  Decorator => Structural
 
-            bool encryptData = true, compressData = true, validate = true;
+            /*bool encryptData = true, compressData = true, validate = true;
             IData cloudData = new CloudData("https://google.com/ai/llm-models");
             
             if (validate)
@@ -298,7 +299,27 @@ namespace InterviewPreparation
                 cloudData = new CompressionDecorator(cloudData);
             }
             
-            cloudData.Save("uqwhqjkqkjsaasasjkaskjkadsjkaskjadjkajk");
+            cloudData.Save("uqwhqjkqkjsaasasjkaskjkadsjkaskjadjkajk");*/
+
+            #endregion
+            
+            #region  Prototype => Creational
+
+            var circle = new Circle();
+            circle.Draw();
+            circle.Radius = 12;
+            
+            var rectangle = new Rectangle();
+            rectangle.Draw();
+            rectangle.Width = 12;
+            rectangle.Height = 6;
+
+            var shapeAction = new ShapeActions();
+            var newCircle = shapeAction.Duplicate(circle);
+            newCircle.Draw();
+            
+            var newRectangle = shapeAction.Duplicate(rectangle);
+            newRectangle.Draw();    
 
             #endregion
         }

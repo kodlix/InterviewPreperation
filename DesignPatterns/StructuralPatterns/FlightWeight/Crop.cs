@@ -11,7 +11,7 @@ namespace DesignPatterns.StructuralPatterns.FlightWeight
         {
             _x = x;
             _y = y;
-            _cropIcon = _cropIcon;
+            _cropIcon = cropIcon;
         }
         
         public void Render()

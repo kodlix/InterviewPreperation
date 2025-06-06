@@ -16,6 +16,7 @@ using DesignPatterns.StructuralPatterns.Adapter;
 using DesignPatterns.StructuralPatterns.Adapter.Package;
 using DesignPatterns.StructuralPatterns.Bridge;
 using DesignPatterns.StructuralPatterns.Composite;
+using DesignPatterns.StructuralPatterns.FlightWeight;
 using DesignPatterns.StructuralPatterns.Proxy;
 using DesignPatterns.StructuralPatterns.Proxy.Package;
 using Microsoft.Win32;
@@ -244,7 +245,7 @@ namespace InterviewPreparation
             
             #region  Proxy => Structural
 
-            var videoList = new VideoList();
+            /*var videoList = new VideoList();
             string[] vidoeIds = { "abcd", "1234", "7890"};
 
             foreach (var videoId in vidoeIds)
@@ -253,9 +254,18 @@ namespace InterviewPreparation
             }
             
             //watch video
-            videoList.Watch("abcd");
+            videoList.Watch("abcd");*/
+            
+            #endregion
+            
+            #region  FlyWeight => Structural
 
-
+            var cropService = new CropService(new CropIconFactory());
+            var crops = cropService.GetCrops();
+            foreach (var crop in crops)
+            {
+                crop.Render();
+            }   
 
             #endregion
         }

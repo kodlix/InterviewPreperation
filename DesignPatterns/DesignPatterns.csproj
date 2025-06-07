@@ -109,6 +109,7 @@
       <Compile Include="CreationalPatterns\PrototypePattern\IShape.cs" />
       <Compile Include="CreationalPatterns\PrototypePattern\Rectangle.cs" />
       <Compile Include="CreationalPatterns\PrototypePattern\ShapeAction.cs" />
+      <Compile Include="CreationalPatterns\Singleton\Appsettings.cs" />
       <Compile Include="StructuralPatterns\Adapter\BlackAndWhiteColor.cs" />
       <Compile Include="StructuralPatterns\Adapter\IColor.cs" />
       <Compile Include="StructuralPatterns\Adapter\Package\Rainbow.cs" />

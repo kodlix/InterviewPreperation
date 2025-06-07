@@ -105,6 +105,13 @@
       <Compile Include="BehaviouralPatterns\Visitor\PdfExportVisitor.cs" />
       <Compile Include="BehaviouralPatterns\Visitor\RestaurantClient.cs" />
       <Compile Include="BehaviouralPatterns\Visitor\RetailClient.cs" />
+      <Compile Include="CreationalPatterns\FactorPattern\BackendFramework\BladeController.cs" />
+      <Compile Include="CreationalPatterns\FactorPattern\BackendFramework\Controller.cs" />
+      <Compile Include="CreationalPatterns\FactorPattern\BackendFramework\TwigController.cs" />
+      <Compile Include="CreationalPatterns\FactorPattern\BackendFramework\ViewEngine.cs" />
+      <Compile Include="CreationalPatterns\FactorPattern\BlagView\BladeViewEngine.cs" />
+      <Compile Include="CreationalPatterns\FactorPattern\OrderController.cs" />
+      <Compile Include="CreationalPatterns\FactorPattern\TwigView\TwigViewEngine.cs" />
       <Compile Include="CreationalPatterns\PrototypePattern\Circle.cs" />
       <Compile Include="CreationalPatterns\PrototypePattern\IShape.cs" />
       <Compile Include="CreationalPatterns\PrototypePattern\Rectangle.cs" />

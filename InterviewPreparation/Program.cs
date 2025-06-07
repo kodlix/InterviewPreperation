@@ -12,6 +12,7 @@ using DesignPatterns.BehaviouralPatterns.State;
 using DesignPatterns.BehaviouralPatterns.Strategy;
 using DesignPatterns.BehaviouralPatterns.Template.Strategy;
 using DesignPatterns.BehaviouralPatterns.Visitor;
+using DesignPatterns.CreationalPatterns.FactorPattern;
 using DesignPatterns.CreationalPatterns.PrototypePattern;
 using DesignPatterns.StructuralPatterns.Adapter;
 using DesignPatterns.StructuralPatterns.Adapter.Package;
@@ -305,7 +306,7 @@ namespace InterviewPreparation
             
             #region  Prototype => Creational
 
-            var circle = new Circle();
+            /*var circle = new Circle();
             circle.Draw();
             circle.Radius = 12;
             
@@ -319,7 +320,14 @@ namespace InterviewPreparation
             newCircle.Draw();
             
             var newRectangle = shapeAction.Duplicate(rectangle);
-            newRectangle.Draw();    
+            newRectangle.Draw();   */ 
+
+            #endregion
+            
+            #region  Factory => Creational
+
+            var ordersCtrl = new OrdersController();
+            ordersCtrl.GetOrder(33);
 
             #endregion
         }

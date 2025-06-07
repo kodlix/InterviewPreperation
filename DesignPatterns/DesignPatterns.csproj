@@ -105,6 +105,11 @@
       <Compile Include="BehaviouralPatterns\Visitor\PdfExportVisitor.cs" />
       <Compile Include="BehaviouralPatterns\Visitor\RestaurantClient.cs" />
       <Compile Include="BehaviouralPatterns\Visitor\RetailClient.cs" />
+      <Compile Include="CreationalPatterns\AbstractFactoryPattern\BusinesslLoanProduct.cs" />
+      <Compile Include="CreationalPatterns\AbstractFactoryPattern\LoanFactories.cs" />
+      <Compile Include="CreationalPatterns\AbstractFactoryPattern\LoanFactoryInterfaces.cs" />
+      <Compile Include="CreationalPatterns\AbstractFactoryPattern\LoanProcessor.cs" />
+      <Compile Include="CreationalPatterns\AbstractFactoryPattern\PersonalLoanProduct.cs" />
       <Compile Include="CreationalPatterns\FactorPattern\BackendFramework\BladeController.cs" />
       <Compile Include="CreationalPatterns\FactorPattern\BackendFramework\Controller.cs" />
       <Compile Include="CreationalPatterns\FactorPattern\BackendFramework\TwigController.cs" />

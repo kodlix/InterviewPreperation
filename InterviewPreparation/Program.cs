@@ -12,6 +12,7 @@ using DesignPatterns.BehaviouralPatterns.State;
 using DesignPatterns.BehaviouralPatterns.Strategy;
 using DesignPatterns.BehaviouralPatterns.Template.Strategy;
 using DesignPatterns.BehaviouralPatterns.Visitor;
+using DesignPatterns.CreationalPatterns.AbstractFactoryPattern;
 using DesignPatterns.CreationalPatterns.FactorPattern;
 using DesignPatterns.CreationalPatterns.PrototypePattern;
 using DesignPatterns.StructuralPatterns.Adapter;
@@ -326,8 +327,26 @@ namespace InterviewPreparation
             
             #region  Factory => Creational
 
+            /*
             var ordersCtrl = new OrdersController();
-            ordersCtrl.GetOrder(33);
+            ordersCtrl.GetOrder(33);*/
+
+            #endregion
+            
+            #region  Abstract Factory => Creational
+
+            Console.WriteLine("Choose loan type: 1 - Personal, 2 - Business");
+            var choice = Console.ReadLine();
+
+            ILoanProcessFactory factory = choice switch
+            {
+                "1" => new PersonalLoanFactory(),
+                "2" => new BusinessLoanFactory(),
+                _ => throw new Exception("Invalid choice")
+            };
+
+            var processor = new LoanProcessor(factory);
+            processor.ProcessLoan();
 
             #endregion
         }
